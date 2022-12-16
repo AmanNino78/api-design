@@ -1,5 +1,5 @@
 import { notDeepEqual } from "assert"
-import prisma from "../modules/db"
+import prisma from "../db"
 
 export const getOneUpdate = async (req, res) => {
     const update = await prisma.update.findUnique({
